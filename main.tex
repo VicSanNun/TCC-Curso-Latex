@@ -1,0 +1,111 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{float}
+\usepackage{multirow}
+
+\newtheorem{teo}{Teorema}[subsection]
+\newtheorem{defi}{Definição}[section]
+
+\newcommand{\divfield}[1]{\div{\textbf{#1}}}
+\newcommand{\curlfield}[1]{\curl{\textbf{#1}}}
+
+\begin{document}
+
+\begin{center}
+    \Large UNIVERSIDADE FEDERAL DE SERGPE\\CENTRO DE CIÊNCIAS EXATAS E DA TERRA\\DEPARTAMENTO DE FÍSICA
+    
+    \vspace{50mm}
+    
+    \normalsize
+    \textbf{Victor S. Nunes}
+    
+    \vspace{60mm}
+    
+    \Large
+    \textbf{Modelo de TCC escrito em \LaTeX}
+    
+    \vspace{100mm}
+    
+    \normalsize
+    São Cristóvão, 18 de Agosto de 2021
+    
+\end{center}
+\thispagestyle{empty}
+
+\newpage
+
+\begin{center}
+    \Large Victor S Nunes
+    \vspace{50mm}
+    
+    MODELO DE TCC ESCRITO EM \LaTeX
+\end{center}
+\vspace{50mm}
+
+\begin{flushright}
+Trabalho de Conclusão de Curso submetido à\\Universidade Federal de Sergipe como requisito\\para receber o grau de bacharel em Astrofísica
+\end{flushright}
+\vspace{95mm}
+
+\begin{center}
+    \normalsize
+    São Cristóvão, 18 de Agosto de 2021
+\end{center}
+\thispagestyle{empty}
+
+\newpage
+\abstract{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae feugiat ex, nec condimentum tortor. Aliquam vulputate odio eget dictum mollis. Nam dictum, felis in tempor placerat, nibh diam mollis risus, et volutpat ante magna a sapien. Vivamus aliquet tristique augue ac semper. Nulla pretium felis et lectus lobortis aliquam. Quisque aliquet sapien a leo posuere molestie in a felis. Aenean hendrerit urna eu vestibulum pretium. Morbi id quam vitae ligula placerat fermentum. Fusce eget maximus metus, sed rhoncus ligula. Ut pellentesque, quam et iaculis ornare, tortor libero finibus purus, quis convallis sem tortor ut metus. Praesent tempus neque id velit ornare porttitor. Pellentesque eleifend nec dui ac imperdiet. Sed dapibus, odio non laoreet ultricies, eros lectus aliquet quam, euismod gravida purus dolor eget nisl. Cras ut erat a nunc eleifend lobortis dictum id lorem. Donec consectetur ullamcorper risus vitae porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.}
+\thispagestyle{empty}
+
+\newpage
+
+\listoffigures
+\thispagestyle{empty}
+\newpage
+
+\listoftables
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\thispagestyle{empty}
+
+\setcounter{page}{0}
+\newpage
+
+\section{Introdução}
+\input{intro}
+
+\section{Objetivos}
+\input{objetivos}
+
+\section{Metodologia}
+\input{metodo.tex}
+
+\section{Leis de Maxwell}
+\input{maxwell}
+
+\section{Aplicação do Eletromagnetismo}
+\input{aplicacao_eletro}
+
+\section{Resultados}
+\input{resultados}
+
+\nocite{moyses}
+\nocite{jackson1999classical}
+\nocite{shannon}
+\nocite{zero20}
+\nocite{sakurai2021modern}
+
+\newpage
+\addcontentsline{toc}{section}{Referências}
+\bibliographystyle{abbrv}
+\bibliography{refs}
+
+\end{document}
